@@ -7,9 +7,9 @@ First, do /timestuck <level> <day|night>, and the time on the level that you wro
 ## Commands and permissions
 Commands:
 -----
-/timestuck :   Main command
+/timestuck:    Main command
 
-<level>    :   Specifies the level name (use level names, not folders) and if not loaded, it will load automatically. It specifies the level name that want the time to be stopped on day or night. 
+<level>:       Specifies the level name (use level names, not folders) and if not loaded, it will load automatically. It specifies the level name that want the time to be stopped on day or night. 
 
 <day|night>:   Specifies the time to be stopped on. 
 
