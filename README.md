@@ -9,9 +9,9 @@ Commands:
 -----
 /timestuck:    Main command
 
-<level>:       Specifies the level name (use level names, not folders) and if not loaded, it will load automatically. It specifies the level name that want the time to be stopped on day or night. 
+{level}:       Specifies the level name (use level names, not folders) and if not loaded, it will load automatically. It specifies the level name that want the time to be stopped on day or night. Required argument
 
-<day|night>:   Specifies the time to be stopped on. 
+{day|night}:   Specifies the time to be stopped on. Required argument
 
 Permissions: 
 -----
