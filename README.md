@@ -21,9 +21,7 @@ OP required?   Yes
 
 ## License used
    
-    Copyright (C) 2017 EoflaOE
-    
-    ForeverTime -- Set specified level's time and stop on specified time
+    ForeverTime -- Set specified level's time and stop on specified time
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -37,3 +35,5 @@ OP required?   Yes
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>
+    
+    Copyright (C) 2017 EoflaOE
