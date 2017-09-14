@@ -20,11 +20,10 @@ Permissions:
 OP required?   Yes
 
 ## License used
-ForeverTime uses a GNU GPL v3 license:
-
-ForeverTime -- Set specified level's time and stop on specified time
-
-Copyright (C) 2017 EoflaOE
+   
+    Copyright (C) 2017 EoflaOE
+    
+    ForeverTime -- Set specified level's time and stop on specified time
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
