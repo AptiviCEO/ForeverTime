@@ -14,19 +14,8 @@ use pocketmine\Player;
 
 class Main extends PluginBase implements Listener{
 
-
-    public function onEnable(){
-
-    }
-
-
-    public function onLoad(){
-        
-    }
-
-
-    public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
-        switch($cmd->getName()){
+    public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool{
+        switch($command->getName()){
             case "timestuck": {
                 if(isset($args[0])){
                 	  if(isset($args[1]) and $args[1] === "day"){
