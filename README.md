@@ -19,6 +19,10 @@ Permissions:
 
 OP required?   Yes
 
+## Planned features
+- More than 2 options for switching time
+- Custom ticks
+
 ## License used
    
     ForeverTime -- Set specified level's time and stop on specified time
