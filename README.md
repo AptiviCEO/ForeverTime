@@ -1,8 +1,8 @@
 # ForeverTime
 This plugin finally lets you choose time between day or night in written level and stops the time forever until the server has been stopped. 
 
-## How do you set the time on specific level to night or to day? 
-First, do /timestuck <level> <day|night>, and the time on the level that you wrote will be set to day or night and stops the time. Even tested with /reload. If you want to start the time again, do /time start (untested) or stop the server and then restart it. 
+## How do you set the time on specific level to written time? 
+First, do /timestuck <level> <morning|noon|afternoon|midnight|dawn|dusk|night>, and the time on the level that you wrote will be set to day or night and stops the time. Even tested with /reload. If you want to start the time again, do /time start (untested) or stop the server and then restart it. 
 
 ## Commands and permissions
 Commands:
@@ -11,7 +11,7 @@ Commands:
 
 {level}:       Specifies the level name (use level names, not folders) and if not loaded, it will load automatically. It specifies the level name that want the time to be stopped on day or night. Required argument
 
-{day|night}:   Specifies the time to be stopped on. Required argument
+{timeunits}:   Specifies the time to be stopped on. Required argument
 
 Permissions: 
 -----
@@ -20,8 +20,12 @@ Permissions:
 OP required?   Yes
 
 ## Planned features
-- More than 2 options for switching time
 - Custom ticks
+
+## Changelog
+
+1.1: Cleaned up main code and added more time units
+1.0: Initial release
 
 ## License used
    
