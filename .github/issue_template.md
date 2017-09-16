@@ -1,7 +1,7 @@
 # Select one of the checkboxes below:
 
-- [] I have an issue
-- [] I have a feature that should be added
+- [ ] I have an issue
+- [ ] I have a feature that should be added
 
 ## Details:
 
