@@ -27,7 +27,7 @@ class Main extends PluginBase implements Listener{
 	}
 	
 	public function setTime(){
-		$world = $this->getConfig()->getLevel()->getName();
+		$world = $this->getServer()->getLevelByName();
 		$morning = $this->getConfig()->get("Morning");
 		$night = $this->getConfig()->get("Night");
 		$noon = $this->getConfig()->get("Noon");
