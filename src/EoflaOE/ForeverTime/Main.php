@@ -27,7 +27,7 @@ class Main extends PluginBase implements Listener{
 	}
 	
 	public function setTime(){
-		$world = $this->getServer()->getLevel()->getFolderName();
+		$world = $this->getServer()->getLevels();
 		$morning = $this->getConfig()->get("Morning");
 		$night = $this->getConfig()->get("Night");
 		$noon = $this->getConfig()->get("Noon");
@@ -35,37 +35,37 @@ class Main extends PluginBase implements Listener{
 		$dusk = $this->getConfig()->get("Dusk");
 		$dawn = $this->getConfig()->get("Dawn");
 		$midnight = $this->getConfig()->get("Midnight");
-		if(in_array($morning, $world)){
+		if(in_array($world, $morning)){
 			$tickmorning = 0;
 			$this->getServer()->loadLevel($world);
 			$this->getServer()->getLevelByName($world)->setTime($tickmorning);
                 	$this->getServer()->getLevelByName($world)->stopTime();
 		}
-		if(in_array($night, $world)){
+		if(in_array($world, $night)){
 			$ticknight = 14000;
 			$this->getServer()->loadLevel($world);
 			$this->getServer()->getLevelByName($world)->setTime($ticknight);
                 	$this->getServer()->getLevelByName($world)->stopTime();
 		}
-		if(in_array($noon, $world)){
+		if(in_array($world, $noon)){
 			$ticknoon = 6000;
 			$this->getServer()->loadLevel($world);
 			$this->getServer()->getLevelByName($world)->setTime($ticknoon);
                 	$this->getServer()->getLevelByName($world)->stopTime();
 		}
-		if(in_array($afternoon, $world)){
+		if(in_array($world, $afternoon)){
 			$tickanoon = 9000;
 			$this->getServer()->loadLevel($world);
 			$this->getServer()->getLevelByName($world)->setTime($tickanoon);
                 	$this->getServer()->getLevelByName($world)->stopTime();
 		}
-		if(in_array($dusk, $world)){
+		if(in_array($world, $dusk)){
 			$tickdusk = 12000;
 			$this->getServer()->loadLevel($world);
 			$this->getServer()->getLevelByName($world)->setTime($tickdusk);
                 	$this->getServer()->getLevelByName($world)->stopTime();
 		}
-		if(in_array($midnight, $world)){
+		if(in_array($world, $midnight)){
 			$tickmnight = 18000;
 			$this->getServer()->loadLevel($world);
 			$this->getServer()->getLevelByName($world)->setTime($tickmnight);
