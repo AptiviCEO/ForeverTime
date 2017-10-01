@@ -65,6 +65,12 @@ class Main extends PluginBase implements Listener{
 			$this->getServer()->getLevelByName($world)->setTime($tickdusk);
                 	$this->getServer()->getLevelByName($world)->stopTime();
 		}
+		if(in_array($world, $dawn)){
+			$tickdusk = 22550;
+			$this->getServer()->loadLevel($world);
+			$this->getServer()->getLevelByName($world)->setTime($tickdusk);
+                	$this->getServer()->getLevelByName($world)->stopTime();
+		}
 		if(in_array($world, $midnight)){
 			$tickmnight = 18000;
 			$this->getServer()->loadLevel($world);
