@@ -38,37 +38,37 @@ class Main extends PluginBase implements Listener{
 		if(in_array($morning, $world)){
 			$tickmorning = 0;
 			$this->getServer()->loadLevel($world);
-			$this->getServer()->getLevelByName($world])->setTime($tickmorning);
+			$this->getServer()->getLevelByName($world)->setTime($tickmorning);
                 	$this->getServer()->getLevelByName($world)->stopTime();
 		}
 		if(in_array($night, $world)){
 			$ticknight = 14000;
 			$this->getServer()->loadLevel($world);
-			$this->getServer()->getLevelByName($world])->setTime($ticknight);
+			$this->getServer()->getLevelByName($world)->setTime($ticknight);
                 	$this->getServer()->getLevelByName($world)->stopTime();
 		}
 		if(in_array($noon, $world)){
 			$ticknoon = 6000;
 			$this->getServer()->loadLevel($world);
-			$this->getServer()->getLevelByName($world])->setTime($ticknoon);
+			$this->getServer()->getLevelByName($world)->setTime($ticknoon);
                 	$this->getServer()->getLevelByName($world)->stopTime();
 		}
 		if(in_array($afternoon, $world)){
 			$tickanoon = 9000;
 			$this->getServer()->loadLevel($world);
-			$this->getServer()->getLevelByName($world])->setTime($tickanoon);
+			$this->getServer()->getLevelByName($world)->setTime($tickanoon);
                 	$this->getServer()->getLevelByName($world)->stopTime();
 		}
 		if(in_array($dusk, $world)){
 			$tickdusk = 12000;
 			$this->getServer()->loadLevel($world);
-			$this->getServer()->getLevelByName($world])->setTime($tickdusk);
+			$this->getServer()->getLevelByName($world)->setTime($tickdusk);
                 	$this->getServer()->getLevelByName($world)->stopTime();
 		}
 		if(in_array($midnight, $world)){
 			$tickmnight = 18000;
 			$this->getServer()->loadLevel($world);
-			$this->getServer()->getLevelByName($world])->setTime($tickmnight);
+			$this->getServer()->getLevelByName($world)->setTime($tickmnight);
                 	$this->getServer()->getLevelByName($world)->stopTime();
 		}
 	}
