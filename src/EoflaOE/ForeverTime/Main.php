@@ -65,7 +65,11 @@ class Main extends PluginBase implements Listener{
 			$this->getServer()->loadLevel($world);
 			$this->getServer()->getLevelByName($world)->setTime($tickmnight);
                 	$this->getServer()->getLevelByName($world)->stopTime();
-		}
+		}elseif(in_array($world, $morning)){
+			$tickday = 0;
+			$this->getServer()->loadLevel($world);
+			$this->getServer()->getLevelByName($world)->setTime($tickday);
+                	$this->getServer()->getLevelByName($world)->stopTime();
 	}
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool{
