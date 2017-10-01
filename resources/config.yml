@@ -2,6 +2,11 @@
 # Config File For ForeverTime.
 
 # You can manually add world name or with the command.
-Day: []
+Morning: []
 Night: []
+Noon: []
+Afternoon: []
+Dusk: []
+Dawn: []
+Midnight: []
 ...
