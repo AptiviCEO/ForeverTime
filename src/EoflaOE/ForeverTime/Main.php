@@ -13,6 +13,65 @@ use pocketmine\Server;
 use pocketmine\Player;
 
 class Main extends PluginBase implements Listener{
+	
+	public function onEnable(){
+		$this->getServer()->getPluginManager()->registerEvents($this,$this);
+		if(!is_dir($this->getDataFolder())) {
+			mkdir($this->getDataFolder());
+		}
+		$this->saveResource("config.yml");
+		$this->getLogger()->notice("Setting Time On Level....");
+		$this->setTime();
+		$this->getLogger()->notice("Successfully Set Time On All Worlds!");
+		$this->getLogger()->notice("ForeverTime Enabled!");
+	}
+	
+	public function setTime(){
+		$world = $this->getServer()->getLevel()->getName();
+		$morning = $this->getConfig()->get("Morning");
+		$night = $this->getConfig()->get("Night");
+		$noon = $this->getConfig()->get("Noon");
+		$afternoon = $this->getConfig()->get("Afternoon");
+		$dusk = $this->getConfig()->get("Dusk");
+		$dawn = $this->getConfig()->get("Dawn");
+		$midnight = $this->getConfig()->get("Midnight");
+		if(in_array($morning, $world)){
+			$tickmorning = 0;
+			$this->getServer()->loadLevel($world);
+			$this->getServer()->getLevelByName($world])->setTime($tickmorning);
+                	$this->getServer()->getLevelByName($world)->stopTime();
+		}
+		if(in_array($night, $world)){
+			$ticknight = 14000;
+			$this->getServer()->loadLevel($world);
+			$this->getServer()->getLevelByName($world])->setTime($ticknight);
+                	$this->getServer()->getLevelByName($world)->stopTime();
+		}
+		if(in_array($noon, $world)){
+			$ticknoon = 6000;
+			$this->getServer()->loadLevel($world);
+			$this->getServer()->getLevelByName($world])->setTime($ticknoon);
+                	$this->getServer()->getLevelByName($world)->stopTime();
+		}
+		if(in_array($afternoon, $world)){
+			$tickanoon = 9000;
+			$this->getServer()->loadLevel($world);
+			$this->getServer()->getLevelByName($world])->setTime($tickanoon);
+                	$this->getServer()->getLevelByName($world)->stopTime();
+		}
+		if(in_array($dusk, $world)){
+			$tickdusk = 12000;
+			$this->getServer()->loadLevel($world);
+			$this->getServer()->getLevelByName($world])->setTime($tickdusk);
+                	$this->getServer()->getLevelByName($world)->stopTime();
+		}
+		if(in_array($midnight, $world)){
+			$tickmnight = 18000;
+			$this->getServer()->loadLevel($world);
+			$this->getServer()->getLevelByName($world])->setTime($tickmnight);
+                	$this->getServer()->getLevelByName($world)->stopTime();
+		}
+	}
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool{
         switch($command->getName()){
